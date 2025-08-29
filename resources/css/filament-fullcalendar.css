@@ -3,20 +3,20 @@
 .filament-fullcalendar {
     --fc-small-font-size: 0.85em;
     --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-    --fc-neutral-bg-color: rgba(var(--gray-50), var(--tw-bg-opacity));
+    --fc-neutral-bg-color: --alpha(var(--gray-50) / var(--tw-bg-opacity));
     --fc-neutral-text-color: #808080;
-    --fc-border-color: rgba(var(--gray-200));
+    --fc-border-color: var(--gray-200);
 
     --fc-button-text-color: #fff;
-    --fc-button-bg-color: rgba(var(--primary-600));
-    --fc-button-border-color: rgba(var(--primary-600));
-    --fc-button-hover-bg-color: rgba(var(--primary-500));
-    --fc-button-hover-border-color: rgba(var(--primary-500));
-    --fc-button-active-bg-color: rgba(var(--primary-500));
-    --fc-button-active-border-color: rgba(var(--primary-500));
+    --fc-button-bg-color: var(--primary-600);
+    --fc-button-border-color: var(--primary-600);
+    --fc-button-hover-bg-color: var(--primary-500);
+    --fc-button-hover-border-color: var(--primary-500);
+    --fc-button-active-bg-color: var(--primary-500);
+    --fc-button-active-border-color: var(--primary-500);
 
-    --fc-event-bg-color: rgba(var(--primary-600));
-    --fc-event-border-color: rgba(var(--primary-600));
+    --fc-event-bg-color: var(--primary-600);
+    --fc-event-border-color: var(--primary-600);
     --fc-event-text-color: #fff;
     --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
 
@@ -30,29 +30,29 @@
     --fc-non-business-color: rgba(215, 215, 215, 0.3);
     --fc-bg-event-color: rgb(143, 223, 130);
     --fc-bg-event-opacity: 0.3;
-    --fc-highlight-color: rgba(var(--primary-500), 0.1);
-    --fc-today-bg-color: rgba(var(--primary-500), 0.2);
+    --fc-highlight-color: -alpha(var(--primary-500) / 10%);
+    --fc-today-bg-color: --alpha(var(--primary-500) / 20%);
     --fc-now-indicator-color: red;
 
-    --fc-list-event-hover-bg-color: rgba(var(--gray-50), var(--tw-bg-opacity));
+    --fc-list-event-hover-bg-color: --alpha(var(--gray-50) / var(--tw-bg-opacity));
 }
 
 html.dark .filament-fullcalendar {
-    --fc-page-bg-color: rgba(var(--gray-900), var(--tw-bg-opacity, 1));
-    --fc-neutral-bg-color: rgba(var(--gray-800), 0.8);
-    --fc-border-color: rgba(var(--gray-700), 0.5);
+    --fc-page-bg-color: --alpha(var(--gray-900) / var(--tw-bg-opacity, 1));
+    --fc-neutral-bg-color: --alpha(var(--gray-800) / 0.8);
+    --fc-border-color: --alpha(var(--gray-700) / 0.5);
 
-    --fc-button-bg-color: rgba(var(--primary-500));
-    --fc-button-border-color: rgba(var(--primary-600));
-    --fc-button-hover-bg-color: rgba(var(--primary-400));
-    --fc-button-hover-border-color: rgba(var(--primary-500));
-    --fc-button-active-bg-color: rgba(var(--primary-400));
-    --fc-button-active-border-color: rgba(var(--primary-500));
+    --fc-button-bg-color: var(--primary-500);
+    --fc-button-border-color: var(--primary-600);
+    --fc-button-hover-bg-color: var(--primary-400);
+    --fc-button-hover-border-color: var(--primary-500);
+    --fc-button-active-bg-color: var(--primary-400);
+    --fc-button-active-border-color: var(--primary-500);
 
-    --fc-event-bg-color: rgba(var(--primary-500));
-    --fc-event-border-color: rgba(var(--primary-600));
+    --fc-event-bg-color: var(--primary-500);
+    --fc-event-border-color: var(--primary-600);
 
-    --fc-list-event-hover-bg-color: rgba(var(--gray-800), 0.8);
+    --fc-list-event-hover-bg-color: --alpha(var(--gray-800) / 20%);
 }
 
 .filament-fullcalendar .fc-toolbar-chunk {
@@ -93,3 +93,4 @@ html.dark .filament-fullcalendar {
 .filament-fullcalendar .fc-list-sticky .fc-list-day th {
     @apply bg-inherit;
 }
+
