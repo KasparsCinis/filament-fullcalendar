@@ -2,6 +2,12 @@
 
 namespace Saade\FilamentFullCalendar\Widgets;
 
+use Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithEvents;
+use Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithRecords;
+use Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithHeaderActions;
+use Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithModalActions;
+use Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithRawJS;
+use Saade\FilamentFullCalendar\Widgets\Concerns\CanBeConfigured;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
